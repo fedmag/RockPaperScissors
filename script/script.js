@@ -27,7 +27,8 @@ reset.onclick = function () {
     this.playerPoints = 0;
     this.PCpoints = 0;
     score.innerHTML = "0 : 0";
-    console.log("not working")
+    p1.innerHTML = "";
+    p2.innerHTML = "";
 }
 
 for (let i = 0; i < buttons.length; i++){
