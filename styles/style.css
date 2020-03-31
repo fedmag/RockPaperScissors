@@ -24,19 +24,20 @@ hr {
 #main {
     padding-top: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center ;
     font-size: 2rem;
 }
 
 #buttons {
-    height: 50%;
+    height: 30%;
     width: auto;
     padding-top: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center ;
-    background-color: darkcyan;
+    margin-bottom: 0%;
     background-size: cover;
     }
 
@@ -64,11 +65,12 @@ hr {
     border: 0px;
     cursor: pointer;
 }
+
 #scissors {
     position: fixed;
     left: 70%;
     top: 40%;
-    height: 16%;
+    height: 15%;
     width: 15%;
     background: url("/files/scissors.png");
     background-size: contain;
@@ -76,4 +78,20 @@ hr {
     background-position: center;
     border: 0px;
     cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+    font-size: 2rem;
+}
+
+#reset {
+    background-color: cornflowerblue;
+    border: 0px;
+    font-family: 'Amatic SC', cursive ;
+    font-size: 2rem;
+    border-radius: 5px;
 }

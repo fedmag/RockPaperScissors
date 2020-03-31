@@ -14,21 +14,47 @@ function game (playerMove, PCmove) {
     if (playerMove == PCmove) winner = "tie";
     return winner;
 }
+
+
 let playerPoints = 0;
 let PCpoints = 0;
 let buttons = document.getElementsByClassName('button');
-while (playerPoints != 5 || PCpoints != 0){
-    for (let i = 0; i < buttons.length; i++){
-        let button = buttons[i];
-        button.onclick = function () {
+let p1 = document.getElementById("p1");
+let p2 = document.getElementById("p2");
+let score = document.getElementById("written-score");
+let reset = document.getElementById("reset");
+reset.onclick = function () {
+    this.playerPoints = 0;
+    this.PCpoints = 0;
+    score.innerHTML = "0 : 0";
+    console.log("not working")
+}
+
+for (let i = 0; i < buttons.length; i++){
+    let button = buttons[i];
+    button.onclick = function () {
+        if (playerPoints < 5 && PCpoints < 5){
             let playerMove = button.id;
             let PCmove = computerPlay();
             let winner = game(playerMove, PCmove);
             if (winner == "player") playerPoints++;
             if (winner == "pc") PCpoints++;
-            console.log("player: "+playerPoints);
-            console.log("PC: "+PCpoints);
+            score.innerHTML = ""+ playerPoints + " : " + PCpoints;
+            p1.innerHTML = "The human chose " + playerMove + ", the computer chose " + PCmove;
+            p2.innerHTML = "The winner is: " + winner;
+        }
+        else {
+            if (playerPoints == 5) {
+                p1.innerHTML = "The player is the winner!";
+                p2.innerHTML = "";
+            }
+            else {
+                p1.innerHTML = "The PC is the winner!";
+                p2.innerHTML = "";
+            }
         }
     }
+    
+
 }
 
