@@ -22,7 +22,8 @@ hr {
 }
 
 #main {
-    padding-top: 60px;
+    padding-top: 180px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,9 +34,9 @@ hr {
 #buttons {
     height: 30%;
     width: auto;
-    padding-top: 10%;
+    margin-top: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center ;
     margin-bottom: 0%;
     background-size: cover;
@@ -43,11 +44,10 @@ hr {
     }
 
 #paper {
-    position: fixed;
     left: 45%;
     top: 40%; 
-    height: 15%;
-    width: 15%;
+    height: 200px;
+    width: 200px;
     background: url("../files/paper.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -56,25 +56,25 @@ hr {
     outline: none;
 }
 #rock {
-    position: fixed;
     left: 15%;
     top: 40%;
-    height: 15%;
-    width: 15%;
+    height: 200px;
+    width: 200px;
     background: url("../files/rock.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 0px;
     cursor: pointer;
     outline: none;
+    padding: 15px;
+    padding-bottom: 0px;
 }
 
 #scissors {
-    position: fixed;
     left: 70%;
     top: 40%;
-    height: 15%;
-    width: 15%;
+    height: 200px;
+    width: 200px;
     background: url("../files/scissors.png");
     background-size: contain;
     background-repeat: no-repeat;
