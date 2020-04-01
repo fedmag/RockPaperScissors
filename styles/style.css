@@ -48,11 +48,12 @@ hr {
     top: 40%; 
     height: 15%;
     width: 15%;
-    background: url("/files/paper.png");
+    background: url("../files/paper.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 0px;
     cursor: pointer;
+    outline: none;
 }
 #rock {
     position: fixed;
@@ -60,11 +61,12 @@ hr {
     top: 40%;
     height: 15%;
     width: 15%;
-    background: url("/files/rock.png");
+    background: url("../files/rock.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 0px;
     cursor: pointer;
+    outline: none;
 }
 
 #scissors {
@@ -73,12 +75,13 @@ hr {
     top: 40%;
     height: 15%;
     width: 15%;
-    background: url("/files/scissors.png");
+    background: url("../files/scissors.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: 0px;
     cursor: pointer;
+    outline: none;
 }
 
 #footer {

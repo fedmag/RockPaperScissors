@@ -42,7 +42,9 @@ for (let i = 0; i < buttons.length; i++){
             if (winner == "pc") PCpoints++;
             score.innerHTML = ""+ playerPoints + " : " + PCpoints;
             p1.innerHTML = "The human chose " + playerMove + ", the computer chose " + PCmove;
-            p2.innerHTML = "The winner is: " + winner;
+            if (winner!= "tie") p2.innerHTML = "The winner is: " + winner;
+            else p2.innerHTML = "this was a tie!";
+            
         }
         else {
             if (playerPoints == 5) {
